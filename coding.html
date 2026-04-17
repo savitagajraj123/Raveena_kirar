@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Platform</title>
+    <link rel="stylesheet" href="coding.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🚀 CodeMaster</h2>
+    <!-- <button onclick="handleBack()">⬅ Back</button> -->
+</div>
+
+<h1 class="main-title">💻 Coding Practice Platform</h1>
+<p class="subtitle">Sharpen your coding skills daily</p>
+
+<!-- LEVELS -->
+<h2 class="section-title">Choose Difficulty</h2>
+<div id="levelSection" class="container"></div>
+
+<!-- QUESTIONS -->
+<div id="questionSection" class="container" style="display:none;">
+    <button class="backBtn" onclick="goBackToLevels()">⬅ Back</button>
+</div>
+
+<!-- PRACTICE -->
+<div id="practiceSection" class="practiceBox">
+
+    <button class="backBtn" onclick="goBackToQuestions()">⬅ Back</button>
+
+    <h2 id="title"></h2>
+    <p id="question"></p>
+    <p id="example" class="example"></p>
+
+    <textarea id="code"></textarea>
+
+    <button class="runBtn" onclick="runCode()">▶ Run Code</button>
+
+    <h3 id="result"></h3>
+    <div id="testResults"></div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Coding Platform | Built by You 💪</p>
+</footer>
+
+<script src="coding.js"></script>
+</body>
+</html>

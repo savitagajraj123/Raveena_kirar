@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>Student Portal</h2>
+  <div>
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showRegister()">Register</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Smart Learning</h1>
+    <p>Practice Aptitude, Coding & Quiz</p>
+    <button onclick="showRegister()">Get Started</button>
+  </div>
+</div>
+
+<!-- Features (CARDS) -->
+<div class="cards">
+
+  <div class="card" onclick="checkLogin('aptitude')">
+    <h3>Aptitude</h3>
+    <p>Improve your logical skills</p>
+  </div>
+
+  <div class="card" onclick="checkLogin('coding')">
+    <h3>Coding</h3>
+    <p>Practice coding problems</p>
+  </div>
+
+  <div class="card" onclick="checkLogin('quiz')">
+    <h3>Quiz</h3>
+    <p>Test your knowledge</p>
+  </div>
+
+  <div class="card" onclick="checkLogin('leaderboard')">
+    <h3>Leaderboard</h3>
+    <p>Check top students</p>
+  </div>
+
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="loginBox" class="modal">
+  <div class="modal-content">
+    <h2>Login</h2>
+    <input id="loginEmail" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="closeLogin()">Back</button>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div id="registerBox" class="modal">
+  <div class="modal-content">
+    <h2>Register</h2>
+    <input id="name" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+     <!-- 🔥 BACK BUTTON ADD -->
+    <button onclick="closeRegister()">Back</button>
+  </div>
+</div>
+
+<a href="https://github.com/savitagajraj123/Raveena-Kirar" target="_blank"> View Full Code</a>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right,#5f73e6,#7b4bb7);
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+.sub {
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+}
+
+/* QUIZ */
+.quizBox {
+    display: none;
+    background: white;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* RESULT */
+.result {
+    display: none;
+    background: white;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+}
